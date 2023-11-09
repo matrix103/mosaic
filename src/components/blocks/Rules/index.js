@@ -2,12 +2,14 @@ import React, {useState} from 'react';
 import styles from "./Rules.module.scss"
 import { Button, Modal } from 'antd';
 import Container from "../../UI/Container";
+import BlockInfoText from "../../UI/BlockInfoText";
 
 const Rules = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
+        <Container>
         <div className={styles.wrapper} id={"rules"}>
-            <Container>
+
             <div className={styles.rules}>
             <div className={styles.book}>
                 <img src={"/images/Rules/book.png"}/>
@@ -38,19 +40,14 @@ const Rules = () => {
                 -Organizers reserve the right to update their terms and conditions.<p></p>
                 </Modal>
                 </div>
-                <div className={styles.inner}>       
-                <div className={styles.title}>
-                RULES AND CONDITIONS
-                </div>
-                <div className={styles.description}>
-                The "Mosaic Film" Festival does not guarantee that the film you submit will be accepted or shown at the festival. Even if your film is accepted, it does not guarantee winning an award. The application fee is non-refundable. The festival organizers may make changes to the program without prior notice.
-The "Mosaic" Festival and related parties are not responsible for any financial losses related to travel, transportation expenses, or other costs associated with attending the festival, including changes in the program such as venue and date alterations.                </div>
-            
+                <BlockInfoText title={"RULES AND CONDITIONS"} description={" The \"Mosaic Film\" Festival does not guarantee that the film you submit will be accepted or shown at the festival. Even if your film is accepted, it does not guarantee winning an award. The application fee is non-refundable. The festival organizers may make changes to the program without prior notice.\n" +
+                    "The \"Mosaic\" Festival and related parties are not responsible for any financial losses related to travel, transportation expenses, or other costs associated with attending the festival, including changes in the program such as venue and date alterations."}/>
 
-                </div>
-            </Container>
+
+
             
         </div>
+        </Container>
     );
 };
 

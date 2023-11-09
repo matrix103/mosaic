@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Awards.module.scss"
+import styles from "./Container.module.scss"
 
 const Container = ({children}) => {
     return (

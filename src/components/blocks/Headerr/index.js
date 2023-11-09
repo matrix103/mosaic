@@ -21,13 +21,13 @@ const items = [
     {
         key: '3',
         label: (
-            <a href={"#values"} className={styles.burgerItem}>CATEGORIES</a>
+            <a href={"#category"} className={styles.burgerItem}>CATEGORIES</a>
         ),
     },
     {
         key: '4',
         label: (
-            <a href={"#operates"} className={styles.burgerItem}>AWARDS AND PRIZES</a>
+            <a href={"#rules"} className={styles.burgerItem}>AWARDS AND PRIZES</a>
         ),
     },
     {
@@ -62,7 +62,7 @@ const Index = () => {
             <Container>
             <div className={styles.inner}>
                 <div className={styles.headerItems}>
-                    <a href={"#about"} className={styles.headerItem}>ABOUT US</a>
+                    <a href={"#aboutUS"} className={styles.headerItem}>ABOUT US</a>
                     <a href={"https://filmfreeway.com/MosaicSintraFilmFestival"} className={styles.headerItem}>SUBMIT</a>
                     <a href={"#category"} className={styles.headerItem}>CATEGORIES</a>
                     <a href={"#awards"} className={styles.headerItem}>AWARDS AND PRIZES</a>
@@ -75,7 +75,7 @@ const Index = () => {
                         }}
                         placement="bottomRight"
                     >
-                        <UnorderedListOutlined style={{color: "#0000"}} />
+                        <UnorderedListOutlined style={{color: "#000000"}} />
                     </Dropdown>
                 </div>
             </div>

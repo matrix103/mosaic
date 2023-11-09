@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from "./Category.module.scss"
 import { Button, Modal } from 'antd';
 import Container from "../../UI/Container";
+import BlockInfoText from "../../UI/BlockInfoText";
 
 const Category = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -9,6 +10,7 @@ const Category = () => {
         <div className={styles.wrapper} id={"category"}>
             <Container>
             <div className={styles.inner}>
+
                 <div className={styles.title}>
                 CATEGORIES
                 </div>

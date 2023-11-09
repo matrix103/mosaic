@@ -3,7 +3,11 @@
     font-family: 'Montserrat', sans-serif;
     background-size: cover;
     display: flex;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 0;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .inner{
@@ -33,13 +37,20 @@
     margin: auto;
     width: 70%;
     display: block;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .book{
     display: flex;
-    height: 350px;
+    height: 300px;
     width: auto;
     justify-content: center;
+    @media screen and (max-width: 500px) {
+        height: 200px;
+    }
 }
 .buttonBlock{
     margin: 0 auto;

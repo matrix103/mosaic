@@ -14,15 +14,15 @@ const Footer = () => {
                     </div>
                     <div className={styles.row}>
                         <a href={'#aboutUS'}>ABOUT US</a>
-                        <a href={'#history'}>CATEGORIES</a>
+                        <a href={'#category'}>CATEGORIES</a>
                     </div>
                     <div className={styles.row}>
-                        <a href={'#operates'}>RULES AND CONDITIONS</a>
+                        <a href={'#rules'}>RULES AND CONDITIONS</a>
                         <a href={'#awards'}>AWARDS</a>
                     </div>
                     <div className={styles.row}>
                     <div className={styles.button}>
-                    <a href={'https://filmfreeway.com/Levelupsydney'}>
+                    <a href={'https://filmfreeway.com/MosaicSintraFilmFestival'}>
                         <img src={"/images/FFButtons/blue.png"}/>
                     </a>
                 </div>
